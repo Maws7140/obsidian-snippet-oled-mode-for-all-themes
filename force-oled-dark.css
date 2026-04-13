@@ -1,0 +1,106 @@
+/* Force an OLED-style dark palette regardless of the active theme. */
+body {
+  color-scheme: dark !important;
+
+  --background-primary: #000000 !important;
+  --background-primary-alt: #000000 !important;
+  --background-secondary: #050505 !important;
+  --background-secondary-alt: #0a0a0a !important;
+  --background-modifier-hover: rgba(255, 255, 255, 0.08) !important;
+  --background-modifier-active-hover: rgba(255, 255, 255, 0.12) !important;
+  --background-modifier-border: rgba(255, 255, 255, 0.1) !important;
+  --background-modifier-border-hover: rgba(255, 255, 255, 0.18) !important;
+  --background-modifier-form-field: #050505 !important;
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.85) !important;
+  --background-modifier-cover: rgba(0, 0, 0, 0.78) !important;
+
+  --text-normal: #f4f4f4 !important;
+  --text-muted: #b4b4b4 !important;
+  --text-faint: #808080 !important;
+  --text-selection: rgba(255, 255, 255, 0.16) !important;
+
+  --interactive-normal: #0d0d0d !important;
+  --interactive-hover: #161616 !important;
+
+  --scrollbar-bg: transparent !important;
+  --scrollbar-thumb-bg: rgba(255, 255, 255, 0.12) !important;
+  --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.22) !important;
+
+  --titlebar-background: #000000 !important;
+  --titlebar-background-focused: #000000 !important;
+}
+
+body,
+.workspace,
+.workspace-leaf,
+.workspace-tabs,
+.workspace-split,
+.mod-root .view-content,
+.markdown-reading-view,
+.markdown-source-view,
+.cm-editor,
+.cm-scroller,
+.mod-sidedock,
+.nav-files-container,
+.metadata-container,
+.modal,
+.menu,
+.suggestion-container,
+.popover,
+.prompt,
+.status-bar,
+.workspace-tab-header-container,
+.workspace-tab-container,
+.view-header,
+.empty-state,
+.callout,
+.cm-gutters {
+  background-color: #000000 !important;
+}
+
+.workspace-tab-header,
+.workspace-tab-header.is-active,
+.side-dock-ribbon,
+input,
+select,
+textarea {
+  background-color: #080808 !important;
+  color: var(--text-normal) !important;
+  border-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+.markdown-embed,
+.internal-embed,
+.cm-lineNumbers,
+.search-result-file-matches,
+.tree-item-children,
+.nav-folder-children {
+  background-color: #020202 !important;
+}
+
+a,
+.cm-link,
+.external-link,
+.internal-link {
+  color: #8ab4ff !important;
+}
+
+mark,
+.search-result-file-matched-text {
+  background-color: rgba(138, 180, 255, 0.25) !important;
+  color: #ffffff !important;
+}
+
+/* Preserve the editing toolbar plugin's transparent icon-button styling. */
+:is(#editingToolbarModalBar, #editingToolbarPopoverBar)
+  :is(
+    button,
+    .editingToolbarCommandItem,
+    [class^="editingToolbarCommandsubItem"],
+    .more-menu,
+    .clickable-icon
+  ) {
+  background: transparent !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+}
