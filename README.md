@@ -13,4 +13,4 @@ CSS snippet to add dark oled mode that works across obsidian themes without taki
 3. Enable it in Settings > Appearance > CSS Snippets
 
 ---
-*Published via [Vault Hub](https://vaulthub.dev)*
+*Published via [Vault Hub](https://obsidianvaulthub.com)*
